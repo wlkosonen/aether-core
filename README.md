@@ -1,4 +1,14 @@
-# Aether_Core — ISK0 / USCS v6.1 Story Workshop
+# Aether Core: an AI story workshop for ISEKAI ZERO
+
+[ISEKAI ZERO](https://www.isekaizero.ai) is a platform for interactive AI stories and characters. Writing a complete
+story for it (setting, characters, rules for the AI narrator, reminders) is a lot of structured text that has to fit a
+token budget. Aether Core walks you through it with an AI co-author, one stage at a time, and exports a package ready
+to paste into the platform.
+
+Below: the original technical overview (the app's internal name is Aether_Core, built on the community's USCS v6.1
+framework).
+
+## Aether_Core — ISK0 / USCS v6.1 Story Workshop
 
 A step-by-step workshop for building complete, copy-paste-ready story packages for
 the **ISK0 platform**, using the **USCS v6.1** framework under the hood. You
