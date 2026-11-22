@@ -1,5 +1,5 @@
 # Use official Node.js image
-FROM node:20-alpine
+FROM node:26-alpine
 
 # Set working directory
 WORKDIR /app
@@ -7,8 +7,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install exactly the tested dependencies (package-lock.json)
+RUN npm ci
 
 # Copy application source files
 COPY . .

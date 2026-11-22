@@ -3456,14 +3456,14 @@ function HelpModal({ onClose, onLoadExample }: { onClose: () => void; onLoadExam
               <p className="text-text-main font-bold">B. Self-host the whole app (server-side Ollama)</p>
               <p>Run your own copy of Aether with Ollama beside it — the app's server makes the call. A bit more setup, but everything stays on one machine.</p>
               <ol className="space-y-1.5 pl-1 list-decimal list-inside marker:text-accent">
-                <li>Get the code from <Link href="https://github.com/wlkosonen/ISK02">GitHub</Link> (green <span className="text-text-main">Code</span> → <span className="text-text-main">Download ZIP</span>, or <code className="bg-black/30 px-1 rounded text-[12px]">git clone</code>).</li>
+                <li>Get the code from <Link href="https://github.com/wlkosonen/aether-core">GitHub</Link> (green <span className="text-text-main">Code</span> → <span className="text-text-main">Download ZIP</span>, or <code className="bg-black/30 px-1 rounded text-[12px]">git clone</code>).</li>
                 <li>Install <Link href="https://www.docker.com/products/docker-desktop/">Docker Desktop</Link>, run <code className="bg-black/30 px-1 rounded text-[12px]">docker compose up --build</code>, and open <code className="bg-black/30 px-1 rounded text-[12px]">http://localhost:3010</code>.</li>
                 <li>Install <Link href="https://ollama.com">Ollama</Link>, pull a model (e.g. <code className="bg-black/30 px-1 rounded text-[12px]">ollama pull llama3.1</code>), and start it so the container can reach it: <code className="bg-black/30 px-1 rounded text-[12px]">OLLAMA_HOST=0.0.0.0 ollama serve</code>.</li>
                 <li>Put <code className="bg-black/30 px-1 rounded text-[12px]">OLLAMA_BASE_URL=http://host.docker.internal:11434</code> in a local <code className="bg-black/30 px-1 rounded text-[12px]">.env</code> (empty by default), then pick <span className="text-text-main">Local Ollama</span> in Settings — it auto-detects installed models.</li>
               </ol>
             </div>
 
-            <p className="text-[12px] text-text-dim">Full self-host notes are in the GitHub <Link href="https://github.com/wlkosonen/ISK02#run-with-docker-self-hosting">README</Link>. Local models are smaller than the big cloud ones, so quality varies — but it's free and stays on your machine.</p>
+            <p className="text-[12px] text-text-dim">Full self-host notes are in the GitHub <Link href="https://github.com/wlkosonen/aether-core#run-with-docker-self-hosting">README</Link>. Local models are smaller than the big cloud ones, so quality varies — but it's free and stays on your machine.</p>
             <p className="p-2.5 rounded-lg bg-[#fbbf24]/10 border border-[#fbbf24]/25 text-[#fde68a] text-[12px]">💡 <span className="font-bold">Tip for local models:</span> lower the <span className="text-text-main">Temperature</span> to around <span className="font-bold">0.6</span> (in Settings). Smaller models can ramble or break the <span className="text-text-main">capture formatting</span> at the default 1.0, which stops finished blocks from saving. Reasoning models (qwen3, deepseek-r1…) are handled automatically — the app tells them to answer directly.</p>
           </section>
 
@@ -3482,7 +3482,7 @@ function HelpModal({ onClose, onLoadExample }: { onClose: () => void; onLoadExam
             <H>Credits &amp; feedback</H>
             <p>This workshop runs on <span className="text-text-main">USCS v6.1</span> — a community effort from the Isekai Zero community, released into the public domain (CC0). Huge thanks to everyone who built it.</p>
             <p>App put together by <span className="text-accent font-bold">@Shegs</span> — find me in the <Link href="https://discord.com/servers/isekai-zero-1415040517594550282">ISK0 Discord</Link> for feedback and ideas. 💬</p>
-            <p>Source code is open on <Link href="https://github.com/wlkosonen/ISK02">GitHub</Link> — fork it, self-host it, or open an issue. 🛠️</p>
+            <p>Source code is open on <Link href="https://github.com/wlkosonen/aether-core">GitHub</Link> — fork it, self-host it, or open an issue. 🛠️</p>
           </section>
         </div>
 

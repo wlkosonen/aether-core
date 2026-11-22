@@ -1,4 +1,4 @@
-# Aether_Core (ISK02) — project guide
+# Aether_Core (repo: aether-core, formerly ISK02) — project guide
 
 Working notes for Claude when developing this repo. Read before making changes.
 
